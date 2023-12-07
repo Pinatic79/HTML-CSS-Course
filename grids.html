@@ -1,0 +1,67 @@
+<!-- Grids maintain better alignment compared to inline property-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Practice</title>
+</head>
+<body style="padding-bottom: 1000px">
+  <div style="
+                display: grid;
+                grid-template-columns: 100px 100px 200px;">
+    <div style="background-color: lightblue;">100px</div>
+    <div style="background-color: pink;">100px<p>Hello</p></div>
+    <div style="background-color: lightblue;">200px</div>
+        
+  </div>
+
+  <div style="
+                  margin-top: 50px;
+                  display: grid;
+                  grid-template-columns: 100px 100px 200px;">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: pink;">100px<p>Hello</p></div>
+      <div style="background-color: lightblue;">200px</div>
+      <div style="background-color: pink;">100px</div>
+    
+      
+    </div>
+<!-- Fr value in css means free space-->
+  <div style="
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 100px 1fr;">
+    <div style="background-color: lightblue;">100px</div>
+    <div style="background-color: pink;">1fr</div>
+  </div>
+    <div style="
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr;" 
+      /* The number before fr is like a ratio */>
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: pink;">1fr</div>
+      <div style="background-color: lightblue;">2fr</div>
+    </div>
+
+    <div style="
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+"> 
+    <div style="background-color: lightblue; height: 300px;">1fr</div>
+    <div style="background-color: pink; height: 300px;">1fr</div>
+    <div style="background-color: lightblue; height: 300px;">1fr</div>
+    <div style="background-color: pink; height: 300px;">1fr</div>
+    <div style="background-color: lightblue; height: 300px;">1fr</div>
+    <div style="background-color: pink; height: 300px;">1fr</div>
+
+
+
+
+  </div>
+</body>
+</html>
